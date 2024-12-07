@@ -1,0 +1,28 @@
+[project]
+name = "class-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "DevHusnainAi", email = "syedhussnaintirmizi@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "langchain-community>=0.3.10",
+    "langchain-core>=0.3.22",
+    "langchain-groq>=0.2.1",
+    "langgraph-cli>=0.1.61",
+    "langgraph>=0.2.56",
+    "pydantic>=2.10.3",
+    "trustcall>=0.0.26",
+]
+
+[tool.setuptools]
+packages = ["class_chatbot"]
+
+[tool.setuptools.package-dir]
+class_chatbot = "src/class_chatbot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
